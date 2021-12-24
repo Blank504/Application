@@ -63,58 +63,71 @@
         <div class="d-flex justify-content-center">
           <h1>Registration</h1>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"> Name </label>
-          <input
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            type="text"
-            placeholder="First Name"
-          />
-          <input
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            type="text"
-            placeholder="Middle Name"
-          />
-          <input
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            type="text"
-            placeholder="Last Name"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Interest</label>
-          <select multiple>
-            <option value="Games">Games</option>
-            <option value="Movies">Movies</option>
-            <option value="Anime">Anime</option>
-            <option value="Sports">Sports</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Date of birth</label
-          >
-          <input
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            type="date"
-          />
-        </div>
-        <div class="mb-3 form-check">
-          <label class="form-check-label" for="exampleCheck1">Dark Mode</label>
-          <input class="form-check-input" id="exampleCheck1" type="checkbox" />
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        <form id="registration-form">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"> Name </label>
+            <input
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+            <input
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              type="text"
+              placeholder="Middle Name"
+              required
+            />
+            <input
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Interest</label>
+            <select multiple id="select" required>
+              <option value="Games">Games</option>
+              <option value="Movies">Movies</option>
+              <option value="Anime">Anime</option>
+              <option value="Sports">Sports</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Date of birth</label
+            >
+            <input
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              type="date"
+              required
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <label class="form-check-label" for="exampleCheck1"
+              >Dark Mode</label
+            >
+            <input
+              class="form-check-input"
+              id="exampleCheck1"
+              type="checkbox"
+            />
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
+    <script src="./registration.js"></script>
   </body>
 </html>
