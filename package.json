@@ -1,0 +1,26 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "It's a application trial",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "winx64": "electron-builder -w --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blank504/Application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blank504/Application/issues"
+  },
+  "homepage": "https://github.com/Blank504/Application#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^16.0.5",
+    "electron-builder": "^22.14.5"
+  }
+}

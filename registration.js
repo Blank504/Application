@@ -1,11 +1,10 @@
 /** @format */
 
 console.log("This is a registration page");
-const userInfo = localStorage.getItem("userInfo");
-if (userInfo) {
+const userInfoA = localStorage.getItem("userInfo");
+if (userInfoA) {
   goTo("home.html");
 }
-
 const registrationform = document.getElementById("registration-form");
 console.log(registrationform);
 
